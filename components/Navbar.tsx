@@ -25,6 +25,11 @@ export default function Navbar() {
             Ψ
           </div>
           <span style={{ fontWeight: 600, fontSize: 15, color: '#e2e8f0' }}>IQ Platform</span>
+          <span style={{
+            fontSize: 10, fontWeight: 600, padding: '2px 6px',
+            borderRadius: 4, background: 'rgba(99,102,241,0.2)',
+            color: '#818cf8', letterSpacing: '0.05em'
+          }}>ML</span>
         </Link>
 
         <div className="flex items-center gap-1">

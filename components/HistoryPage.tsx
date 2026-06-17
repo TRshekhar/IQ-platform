@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { getAllSessions, getSessionsForUser, getDistinctUsers, deleteSession, clearSessionsForUser, clearAllSessions, getStatsForSessions, TestSession } from '@/lib/history'
 import Navbar from './Navbar'
 import Link from 'next/link'
+import { clearSeenQuestions } from '@/lib/questions'
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid } from 'recharts'
 import { format } from 'date-fns'
 
@@ -91,9 +92,14 @@ export default function HistoryPage() {
                   </button>
                 )}
                 {allSessions.length > 0 && (
-                  <button className="btn-ghost" style={{ fontSize: 12, padding: '6px 12px' }} onClick={() => setConfirmClear('all')}>
-                    Clear all
-                  </button>
+                  <>
+                    <button className="btn-ghost" style={{ fontSize: 12, padding: '6px 12px', color: '#818cf8', borderColor: 'rgba(99,102,241,0.3)' }} onClick={() => { clearSeenQuestions(); alert('Question rotation reset! Next test will feel fresh.') }} title="Reset so all questions can appear again">
+                      Reset rotation
+                    </button>
+                    <button className="btn-ghost" style={{ fontSize: 12, padding: '6px 12px' }} onClick={() => setConfirmClear('all')}>
+                      Clear all
+                    </button>
+                  </>
                 )}
               </>
             )}

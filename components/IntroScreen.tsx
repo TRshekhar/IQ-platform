@@ -11,6 +11,7 @@ function NeuralCanvas() {
     if (!canvas) return
     const ctx = canvas.getContext('2d')
     if (!ctx) return
+    const draw_ctx = ctx
 
     let W = canvas.offsetWidth, H = canvas.offsetHeight
     canvas.width = W; canvas.height = H
