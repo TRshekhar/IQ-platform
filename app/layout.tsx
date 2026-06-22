@@ -13,8 +13,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased">
         <div className="relative z-10">
           {children}
-          <Analytics />
         </div>
+        <Analytics />
       </body>
     </html>
   )
