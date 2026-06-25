@@ -19,9 +19,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <div className="relative z-10">
           {children}
           <Footer />
-          <Analytics />
-          <SpeedInsights/>
         </div>
+        <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   )
