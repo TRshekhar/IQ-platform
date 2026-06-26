@@ -7,6 +7,9 @@ import Footer from '@/components/Footer'
 export const metadata: Metadata = {
   title: 'IQ Platform — Free ML-Powered Cognitive Assessment',
   description: 'Take a free adaptive IQ test powered by machine learning. Questions calibrate to your age, education and occupation across 6 cognitive domains.',
+  verification: {
+    google: 'jtqy0-g43HeYaC3fSHT4u0KM0YbLm9m81elWExbUReQ'
+  }
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
