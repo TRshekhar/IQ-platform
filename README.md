@@ -64,6 +64,9 @@ npm run dev
 
 # 3. Open browser
 open http://localhost:3000
+
+### 🔗 Live Demo
+Try the platform: [https://iq-platform-plum.vercel.app](https://iq-platform-plum.vercel.app)
 ```
 
 ## Project Structure
